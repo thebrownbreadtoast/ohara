@@ -24,7 +24,7 @@ connectivityCheck: true # whether you want to display a message when the apps ar
 
 # Set the default layout and color scheme
 defaults:
-  layout: columns # Either 'columns', or 'list'
+  layout: list # Either 'columns', or 'list'
   colorTheme: dark # One of 'auto', 'light', or 'dark'
 
 # Optional navbar
@@ -46,4 +46,10 @@ services:
         tag: "entertainment"
         url: "http://192.168.1.9:8096"
         target: "_blank" # optional html tag target attribute
-
+      - name: "qBit"
+        # Alternatively a fa icon can be provided:
+        logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
+        subtitle: "qBittorrent"
+        tag: "tools"
+        url: "http://192.168.1.9:8081"
+        target: "_blank" # optional html tag target attribute
