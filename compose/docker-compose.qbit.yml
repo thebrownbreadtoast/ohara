@@ -11,5 +11,7 @@ services:
       - ${QBIT_CONFIG_DIR:-/media/qbit/config}:/config
       - ${QBIT_DOWNLOAD_DIR:-/media/qbit}:/downloads
     ports:
-      - 8081:8080
+      - 8081:8081
+      - 6881:6881
+      - 6881:6881/udp
     restart: unless-stopped
