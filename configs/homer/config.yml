@@ -44,12 +44,19 @@ services:
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/jellyfin.svg"
         subtitle: "Jellyfin & Chill!"
         tag: "entertainment"
-        url: "http://192.168.1.9:8096"
+        url: "http://192.168.1.11:8096"
         target: "_blank" # optional html tag target attribute
       - name: "qBit"
         # Alternatively a fa icon can be provided:
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
-        subtitle: "qBittorrent"
+        subtitle: "Illegal downloads happen here..."
         tag: "tools"
-        url: "http://192.168.1.9:8081"
+        url: "http://192.168.1.11:8081"
+        target: "_blank" # optional html tag target attribute
+      - name: "Komga"
+        # Alternatively a fa icon can be provided:
+        logo: "https://github.com/NX211/homer-icons/blob/master/png/kavita.png?raw=true"
+        subtitle: "Kaizoku ou ni ore wa naru!"
+        tag: "entertainment"
+        url: "http://192.168.1.11:25600"
         target: "_blank" # optional html tag target attribute
