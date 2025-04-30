@@ -6,7 +6,7 @@ services:
     user: 1000:1000
     network_mode: 'host'
     volumes:
-      - ${JELLYFIN_CONFIG_DIR:-/home/akshay/tools/ohara/configs/jellyfin}:/config
+      - ${JELLYFIN_CONFIG_DIR:-/media/jellyfin/config}:/config
       - type: bind
         source: ${JELLYFIN_MEDIA_DIR:-/media/jellyfin}
         target: /media
