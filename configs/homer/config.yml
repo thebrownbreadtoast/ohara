@@ -28,7 +28,15 @@ defaults:
   colorTheme: dark # One of 'auto', 'light', or 'dark'
 
 # Optional navbar
-links: [] # Allows for navbar (dark mode, layout, and search) without any links
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Ohara"
+    icon: "fab fa-github"
+    url: "https://github.com/thebrownbreadtoast/ohara"
+    target: "_blank" # optional html tag target attribute
+  - name: "dex-cli"
+    icon: "fab fa-github"
+    url: "https://github.com/thebrownbreadtoast/dex-cli"
 
 # Services
 # First level array represents a group.
