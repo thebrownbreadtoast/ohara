@@ -25,6 +25,7 @@ server {
 
 	location / {
 		proxy_pass http://192.168.0.111:8081;
+		proxy_set_header Referer '';
 	}
 }
 

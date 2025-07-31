@@ -66,11 +66,11 @@ services:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/kavita.png?raw=true"
         subtitle: "Kaizoku ou ni ore wa naru!"
         tag: "entertainment"
-        url: "http://komga.oharam.com"
+        url: "http://komga.ohara.com"
         target: "_blank" # optional html tag target attribute
       - name: "Pi-hole"
         # Alternatively a fa icon can be provided:
-        logo: "https://github.com/NX211/homer-icons/blob/master/png/kavita.png?raw=true"
+        logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
         subtitle: "DNS manager"
         tag: "tools"
         url: "http://pihole.ohara.com/admin"
