@@ -1,0 +1,8 @@
+# Replace with /etc/networ/interfaces
+auto wlp2s0
+iface wlp2s0 inet static
+	address 192.168.0.111
+	subnet 255.255.255.0
+	gateway 192.168.0.1
+	wpa-essid speednet-extender
+	wpa-psk brownbread
