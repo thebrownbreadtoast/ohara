@@ -54,19 +54,26 @@ services:
         tag: "entertainment"
         url: "http://jellyfin.ohara.com"
         target: "_blank" # optional html tag target attribute
-      - name: "qBit"
-        # Alternatively a fa icon can be provided:
-        logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
-        subtitle: "Illegal downloads happen here..."
-        tag: "tools"
-        url: "http://qbit.ohara.com"
-        target: "_blank" # optional html tag target attribute
       - name: "Komga"
         # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/kavita.png?raw=true"
         subtitle: "Kaizoku ou ni ore wa naru!"
         tag: "entertainment"
         url: "http://komga.ohara.com"
+        target: "_blank" # optional html tag target attribute
+      - name: "copyparty"
+        # Alternatively a fa icon can be provided:
+        logo: "https://github.com/NX211/homer-icons/blob/master/png/filebrowser.png?raw=true"
+        subtitle: "File Explorer"
+        tag: "tools"
+        url: "http://copyparty.ohara.com"
+        target: "_blank" # optional html tag target attribute
+      - name: "qBit"
+        # Alternatively a fa icon can be provided:
+        logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
+        subtitle: "Illegal downloads happen here..."
+        tag: "tools"
+        url: "http://qbit.ohara.com:8081" # fix: adding :8081 as port in URL, as qbit is facing some issues behind nginx on :80
         target: "_blank" # optional html tag target attribute
       - name: "Pi-hole"
         # Alternatively a fa icon can be provided:
