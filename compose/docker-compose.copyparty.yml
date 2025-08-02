@@ -1,0 +1,18 @@
+services:
+  copyparty:
+    image: copyparty/ac:latest
+    container_name: copyparty
+    volumes:
+      - ../configs/copyparty:/cfg:z
+      - /media:/w:z
+    ports:
+      - 3923:3923
+    user: "1000:1000"
+    environment:
+      LD_PRELOAD: /usr/lib/libmimalloc-secure.so.NOPE
+      # enable mimalloc by replacing "NOPE" with "2" for a nice speed-boost (will use twice as much ram)
+
+      PYTHONUNBUFFERED: 1
+      # ensures log-messages are not delayed (but can reduce speed a tiny bit)
+
+    stop_grace_period: 15s  # thumbnailer is allowed to continue finishing up for 10s after the shutdown signal
