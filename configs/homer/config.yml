@@ -75,7 +75,14 @@ services:
         tag: "tools"
         url: "http://qbit.ohara.com:8081" # fix: adding :8081 as port in URL, as qbit is facing some issues behind nginx on :80
         target: "_blank" # optional html tag target attribute
-      - name: "Pi-hole"
+      - name: "2FAuth"
+        # Alternatively a fa icon can be provided:
+        logo: "https://github.com/NX211/homer-icons/blob/master/png/authelia.png?raw=true"
+        subtitle: "Authenticator"
+        tag: "tools"
+        url: "http://2fa.ohara.com"
+        target: "_blank" # optional html tag target attribute
+      - name: "Pihole"
         # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
         subtitle: "DNS manager"
