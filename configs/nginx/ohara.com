@@ -25,7 +25,12 @@ server {
 
     location / {
         proxy_pass http://192.168.0.111:8081;
-        proxy_set_header Referer '';
+
+        # Also enable "Enable reverse proxy support" in Setting>WebUI and use "nginx" as value Trusted proxies list
+        proxy_set_header   Host               $proxy_host;
+        proxy_set_header   X-Forwarded-For    $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Host   $http_host;
+        proxy_set_header   X-Forwarded-Proto  $scheme;
     }
 }
 
@@ -56,12 +61,15 @@ server {
 
     location / {
         proxy_pass http://192.168.0.111:3923;
+
         proxy_redirect off;
+
         # disable buffering (next 4 lines)
         proxy_http_version 1.1;
         client_max_body_size 0;
         proxy_buffering off;
         proxy_request_buffering off;
+
         # improve download speed from 600 to 1500 MiB/s
         proxy_buffers 32 8k;
         proxy_buffer_size 16k;

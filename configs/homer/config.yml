@@ -73,7 +73,7 @@ services:
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
         subtitle: "Illegal downloads happen here..."
         tag: "tools"
-        url: "http://qbit.ohara.com:8081" # fix: adding :8081 as port in URL, as qbit is facing some issues behind nginx on :80
+        url: "http://qbit.ohara.com"
         target: "_blank" # optional html tag target attribute
       - name: "2FAuth"
         # Alternatively a fa icon can be provided:
