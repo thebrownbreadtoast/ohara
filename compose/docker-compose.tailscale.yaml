@@ -16,3 +16,4 @@ services:
     cap_add:
       - net_admin
     restart: unless-stopped
+    network_mode: host
