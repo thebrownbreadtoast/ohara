@@ -4,10 +4,10 @@ services:
     container_name: komga
     volumes:
       - type: bind
-        source: /media/komga/config
+        source: /ohara/komga/config
         target: /config
       - type: bind
-        source: /media/komga/data
+        source: /ohara/komga/data
         target: /data
     ports:
       - 25600:25600

@@ -10,7 +10,7 @@ services:
       - TS_USERSPACE=false
       - TS_HOSTNAME=ohara
     volumes:
-      - /media/tailscale/state:/var/lib/tailscale
+      - /ohara/tailscale/state:/var/lib/tailscale
     devices:
       - /dev/net/tun:/dev/net/tun
     cap_add:

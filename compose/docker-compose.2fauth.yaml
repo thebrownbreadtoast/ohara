@@ -4,7 +4,7 @@ services:
     image: 2fauth/2fauth
     container_name: 2fauth
     volumes:
-      - /media/2fauth:/2fauth
+      - /ohara/2fauth:/2fauth
     ports:
       - 8004:8000/tcp
     environment:

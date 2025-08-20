@@ -4,7 +4,7 @@ services:
     container_name: copyparty
     volumes:
       - ../configs/copyparty:/cfg:z
-      - /media:/w:z
+      - /ohara/media:/w:z
     ports:
       - 3923:3923
     user: "1000:1000"

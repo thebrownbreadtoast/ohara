@@ -11,5 +11,5 @@ services:
       FTLCONF_webserver_api_password: 'superman'
       FTLCONF_dns_listeningMode: 'all'
     volumes:
-      - '/media/pihole/etc-pihole:/etc/pihole'
+      - '/ohara/pihole/etc-pihole:/etc/pihole'
     restart: unless-stopped

@@ -3,7 +3,7 @@ services:
     image: b4bz/homer:v25.04.1
     container_name: homer
     volumes:
-      - ${HOMER_ASSETS_DIR:-/media/homer}:/www/assets
+      - ${HOMER_ASSETS_DIR:-/ohara/homer}:/www/assets
     ports:
       - 8080:8080
     user: 1000:1000

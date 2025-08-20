@@ -6,8 +6,8 @@ services:
     user: 1000:1000
     network_mode: 'host'
     volumes:
-      - ${JELLYFIN_CONFIG_DIR:-/media/jellyfin/config}:/config
+      - ${JELLYFIN_CONFIG_DIR:-/ohara/jellyfin/config}:/config
       - type: bind
-        source: ${JELLYFIN_MEDIA_DIR:-/media/jellyfin}
+        source: ${JELLYFIN_MEDIA_DIR:-/ohara/media}
         target: /media
     restart: 'unless-stopped'
