@@ -2,7 +2,6 @@
 
 echo "Installing required packages..."
 
-# Create symlinks for .bashrc and .bash_profile
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 HOME_DIR="$HOME"
 
