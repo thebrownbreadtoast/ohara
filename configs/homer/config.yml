@@ -89,3 +89,10 @@ services:
         tag: "tools"
         url: "http://pihole.ohara.com/admin"
         target: "_blank" # optional html tag target attribute
+      - name: "OpenSpeedTest"
+        # Alternatively a fa icon can be provided:
+        logo: "https://github.com/NX211/homer-icons/blob/master/png/openspeedtest.png?raw=true"
+        subtitle: "Check your connection with Ohara server"
+        tag: "tools"
+        url: "http://speedtest.ohara.com"
+        target: "_blank" # optional html tag target attribute
