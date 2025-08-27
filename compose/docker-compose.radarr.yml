@@ -11,5 +11,5 @@ services:
       - TZ=Etc/UTC
     volumes:
       - /ohara/radarr/config:/config:z
-      - ${JELLYFIN_MEDIA_DIR:-/ohara/media}:/data:z
+      - ${JELLYFIN_MEDIA_DIR:-/ohara/media}/movies:/data:z
     restart: unless-stopped
