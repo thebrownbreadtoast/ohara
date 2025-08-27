@@ -54,13 +54,13 @@ services:
         tag: "entertainment"
         url: "http://jellyfin.ohara.com"
         target: "_blank" # optional html tag target attribute
-      # - name: "Komga"
-      #   # Alternatively a fa icon can be provided:
-      #   logo: "https://github.com/NX211/homer-icons/blob/master/png/kavita.png?raw=true"
-      #   subtitle: "Kaizoku ou ni ore wa naru!"
-      #   tag: "entertainment"
-      #   url: "http://komga.ohara.com"
-      #   target: "_blank" # optional html tag target attribute
+      - name: "Radarr"
+        # Alternatively a fa icon can be provided:
+        logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/png/radarr.png"
+        subtitle: "Search movies here"
+        tag: "entertainment"
+        url: "http://radarr.ohara.com"
+        target: "_blank" # optional html tag target attribute
       - name: "copyparty"
         # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/filebrowser.png?raw=true"
