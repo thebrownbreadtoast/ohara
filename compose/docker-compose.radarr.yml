@@ -1,7 +1,7 @@
 services:
   radarr:
+    image: ghcr.io/hotio/radarr:release-5.26.2.10099
     container_name: radarr
-    image: ghcr.io/hotio/radarr
     ports:
       - "7878:7878"
     environment:

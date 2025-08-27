@@ -1,7 +1,7 @@
 version: "3"
 services:
   2fauth:
-    image: 2fauth/2fauth
+    image: 2fauth/2fauth:5.6.0
     container_name: 2fauth
     volumes:
       - /ohara/2fauth:/2fauth

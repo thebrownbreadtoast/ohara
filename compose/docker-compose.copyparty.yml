@@ -1,6 +1,6 @@
 services:
   copyparty:
-    image: copyparty/ac:latest
+    image: copyparty/ac:1.19.5
     container_name: copyparty
     volumes:
       - ../configs/copyparty:/cfg:z
