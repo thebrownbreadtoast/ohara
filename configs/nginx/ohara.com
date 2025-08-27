@@ -94,3 +94,23 @@ server {
         client_max_body_size 0;
     }
 }
+
+server {
+    listen 80;
+
+    server_name radarr.ohara.com;
+
+    location / {
+        proxy_pass http://192.168.0.111:7878;
+    }
+}
+
+server {
+    listen 80;
+
+    server_name prowlarr.ohara.com;
+
+    location / {
+        proxy_pass http://192.168.0.111:9696;
+    }
+}
