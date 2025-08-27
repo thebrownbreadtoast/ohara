@@ -34,16 +34,6 @@ server {
     }
 }
 
-#server {
-#    listen 80;
-#
-#    server_name komga.ohara.com;
-#
-#    location / {
-#        proxy_pass http://192.168.0.111:25600;
-#    }
-#}
-
 server {
     listen 80;
 
