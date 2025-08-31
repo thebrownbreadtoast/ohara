@@ -7,11 +7,6 @@ Ohara is designed for seamless access both at home and remotely:
 - **Tailscale** is configured to use Pi-hole for DNS, so when remote, `ohara.com` and all services resolve securely over the Tailscale network.
 - All services are reverse-proxied via Nginx for unified access, whether on your LAN or remotely.
 
-
-<p align="center">
-	<img src="https://healthchecks.io/b/2/0a25792d-04b4-429d-84bb-0c93d3bd3c68.svg"/>
-</p>
-
 ---
 
 ## 🏡 What is Ohara?
@@ -23,7 +18,7 @@ Ohara is designed for seamless access both at home and remotely:
 ## 🚀 Features
 
 - **One-command deployment** with Docker Compose
-- **Service health monitoring** with [Healthchecks.io](https://healthchecks.io)
+- **Service health monitoring** with [Healthchecks.io](https://healthchecks.io) and [Uptime Kuma](https://uptime.kuma.pet)
 - **Modern dashboard** with [Homer](https://github.com/bastienwirtz/homer)
 - **Media streaming** ([Jellyfin](https://jellyfin.org)), **downloads** ([qBittorrent](https://www.qbittorrent.org)), **ad-blocking** ([Pi-hole](https://pi-hole.net)), and more!
 - **Easy configuration** and extensibility
@@ -44,7 +39,6 @@ Ohara is designed for seamless access both at home and remotely:
 | Networking              | **Pi-hole**     | Network ad-blocking        | 8888      |
 |                         | **OpenSpeedTest**| Network speed test         | 3000      |
 | Indexers                | **Prowlarr**    | Indexer manager            | 9696      |
-| Integrations            | **Watchdog**    | Healthchecks.io integration| -         |
 
 ---
 
@@ -53,18 +47,3 @@ Ohara is designed for seamless access both at home and remotely:
 - **Uptime Kuma** is used for real-time monitoring of all services, with a web dashboard for statuses.
 - **Healthchecks.io** is used to track if the server is alive, with periodic pings from the system (e.g., via cron or scheduled tasks).
 - Each service is reverse-proxied and monitored for uptime and reachability.
-
----
-
-## 📁 Directory Structure
-
-# Or just Kuma (standalone):
-docker compose up -d
-```
-
-```text
-compose/         # All docker-compose YAMLs
-configs/         # Service configs (nginx, homer, etc.)
-scripts/         # Utility scripts (setup, etc.)
-assets/          # Logos and static assets
-```
