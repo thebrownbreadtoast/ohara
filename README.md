@@ -10,7 +10,7 @@ Ohara is designed for seamless access both at home and remotely:
 ---
 
 <p align="center">
-	<img src="https://healthchecks.io/badge/b02318c7-d44f-4edf-b034-4b3afc/jMNtyHx2-2.svg"/>
+	<img src="https://healthchecks.io/b/2/0a25792d-04b4-429d-84bb-0c93d3bd3c68.svg"/>
 </p>
 
 ---
