@@ -37,6 +37,10 @@ links:
   - name: "dex-cli"
     icon: "fab fa-github"
     url: "https://github.com/thebrownbreadtoast/dex-cli"
+  - name: "Healthchecks.io"
+    icon: "fas fa-heartbeat"
+    url: "https://healthchecks.io/projects/6199303b-aca6-4c1d-aadc-c3cc95867adb/checks/"
+    target: "_blank"
 
 # Services
 # First level array represents a group.
