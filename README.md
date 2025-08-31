@@ -1,5 +1,3 @@
----
-
 ## 🌐 Network & DNS Architecture
 
 Ohara is designed for seamless access both at home and remotely:
