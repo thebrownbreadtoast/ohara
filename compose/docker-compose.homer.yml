@@ -9,4 +9,11 @@ services:
     user: "1000:1000"
     environment:
       - INIT_ASSETS=1 # default, requires the config directory to be writable for the container user (see user option)
+
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 30s

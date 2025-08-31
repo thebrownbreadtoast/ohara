@@ -12,4 +12,11 @@ services:
       FTLCONF_dns_listeningMode: 'all'
     volumes:
       - '/ohara/pihole/etc-pihole:/etc/pihole'
+
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:80/admin/"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 30s

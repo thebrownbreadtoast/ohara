@@ -17,3 +17,9 @@ services:
 
     stop_grace_period: 15s  # thumbnailer is allowed to continue finishing up for 10s after the shutdown signal
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:3923/"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 30s

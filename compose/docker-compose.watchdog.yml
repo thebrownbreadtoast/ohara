@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  watchdog:
+    image: python:3.12-slim
+    container_name: watchdog
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ../configs/watchdog/config.yml:/config.yml:ro
+      - ../scripts/watchdog.py:/scripts/watchdog.py:ro
+    environment:
+      - TZ=UTC
+  command: ["/bin/sh", "-c", "pip install pyyaml requests docker && python /scripts/watchdog.py /config.yml"]
+  restart: unless-stopped

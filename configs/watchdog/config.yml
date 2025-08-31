@@ -1,0 +1,3 @@
+services:
+  - name: container_name
+    uuid: healthchecks-uuid

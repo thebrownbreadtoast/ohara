@@ -5,4 +5,11 @@ services:
     container_name: speedtest
     ports:
     - 3000:3000
+
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:3000/"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 30s

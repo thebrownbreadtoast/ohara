@@ -7,4 +7,11 @@ services:
     volumes:
       - ${JELLYFIN_CONFIG_DIR:-/ohara/jellyfin/config}:/config:z
       - ${JELLYFIN_MEDIA_DIR:-/ohara/media}:/media:z
+
     restart: 'unless-stopped'
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8096/health"]
+      interval: 1m
+      timeout: 10s
+      retries: 3
+      start_period: 30s
