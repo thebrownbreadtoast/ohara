@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   uptime-kuma:
-    image: healthchecks/healthchecks:v3.11.1
+    image: louislam/uptime-kuma:1.23.16-alpine
     container_name: uptime-kuma
     restart: unless-stopped
     ports:
