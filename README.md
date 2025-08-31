@@ -9,25 +9,19 @@ Ohara is designed for seamless access both at home and remotely:
 - **Tailscale** is set up to use Pi-hole as its DNS, so when you are remote, `ohara.com` still resolves to your homeserver over the secure Tailscale network.
 - This means you can access your homeserver at `http://ohara.com` from anywhere—no matter if you’re at home or away!
 
-```mermaid
-flowchart TD
-		Internet((🌐 Internet))
-		subgraph Home_Network[Home Network]
-			Router[Router (DNS: Pi-hole)]
-			PiHole[Pi-hole (DNS for ohara.com)]
-			Ohara[Ohara Homeserver]
-		end
-		subgraph Tailscale_Network[Tailscale Network]
-			Device[Remote Device]
-			Tailscale[Tailscale VPN]
-		end
-		Internet --> Router
-		Router --> PiHole
-		PiHole --> Ohara
-		Device --> Tailscale
-		Tailscale --> PiHole
-		PiHole --> Ohara
-```
+
+### How it works
+
+1. **Local Network:**
+	- Your router is configured to use Pi-hole as the default DNS server.
+	- All devices on your home network resolve `ohara.com` to your homeserver’s local IP via Pi-hole.
+
+2. **Remote Access (Tailscale):**
+	- Tailscale is set up to use Pi-hole as its DNS server for your tailnet.
+	- When you are remote, any device connected to Tailscale will resolve `ohara.com` to your homeserver over the secure Tailscale network.
+
+3. **Result:**
+	- You can access your homeserver at `http://ohara.com` from anywhere—at home or remotely—using the same domain name.
 # <img src="assets/homer/homer-logo.png" alt="Ohara Logo" width="48"/> Ohara Homeserver
 
 ---
