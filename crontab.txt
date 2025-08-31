@@ -24,4 +24,5 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-*/30 * * * * /home/akshay/tools/vegapunk6969_bot/tasks.py >> /home/akshay/tools/vegapunk6969_bot/vegapunk.log 2>&1
+*/30 * * * * curl -fsS https://hc-ping.com/2c442359-149b-44ec-a8c1-f6324daa8826/start > /dev/null && /home/akshay/tools/vegapunk6969_bot/tasks.py >> /home/akshay/tools/vegapunk6969_bot/vegapunk.log 2>&1 && https://hc-ping.com/2c442359-149b-44ec-a8c1-f6324daa8826/ > /dev/null || curl -fsS https://hc-ping.com/2c442359-149b-44ec-a8c1-f6324daa8826/fail > /dev/null
+*/5 * * * * curl -fsS https://hc-ping.com/49bd340d-48d5-4d48-974b-32da3a7bfb61 > /dev/null

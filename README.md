@@ -31,19 +31,23 @@ Ohara is designed for seamless access both at home and remotely:
 
 ---
 
-## 🧩 Included Services
 
-| Service         | Description                | Port(s)   | Healthcheck |
-|-----------------|---------------------------|-----------|-------------|
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **Homer**        | Dashboard & links           | 8080      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **Jellyfin**     | Media streaming             | 8096      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **qBittorrent** | Torrent downloads           | 8081      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **Pi-hole**     | Network ad-blocking         | 8888      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **Copyparty**   | File sharing                | 3923      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **Radarr**      | Movie automation            | 7878      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **Prowlarr**    | Indexer manager             | 9696      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> **OpenSpeedTest**| Network speed test          | 3000      | Yes         |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24"/> **Watchdog**    | Healthchecks.io integration | -         | -           |
+## 🧩 Included Services & Categories
+
+| Category                | Service         | Description                | Port(s)   |
+|-------------------------|-----------------|---------------------------|-----------|
+| Monitoring & Dashboards | **Homer**       | Dashboard & links          | 8080      |
+|                         | **Uptime Kuma** | Uptime/status monitoring   | 3001      |
+| Entertainment           | **Jellyfin**    | Media streaming            | 8096      |
+|                         | **Radarr**      | Movie automation           | 7878      |
+| Tools                   | **qBittorrent** | Torrent downloads          | 8081      |
+|                         | **Copyparty**   | File sharing               | 3923      |
+|                         | **2FAuth**      | Authenticator              | 8004      |
+| Networking              | **Pi-hole**     | Network ad-blocking        | 8888      |
+|                         | **OpenSpeedTest**| Network speed test         | 3000      |
+| Indexers                | **Prowlarr**    | Indexer manager            | 9696      |
+| Integrations            | **Watchdog**    | Healthchecks.io integration| -         |
+
 
 ---
 
@@ -52,25 +56,17 @@ Ohara is designed for seamless access both at home and remotely:
 ```sh
 # Clone the repo
 $ git clone https://github.com/thebrownbreadtoast/ohara.git
-$ cd ohara
+
+```sh
+# Clone the repo
+git clone https://github.com/thebrownbreadtoast/ohara.git
+cd ohara
 
 # Copy and edit configs as needed
-$ cp compose/env.bkp compose/.env
+cp compose/env.bkp compose/.env
 
-# Start all services
-$ docker compose -f compose/docker-compose.homer.yml \
-								 -f compose/docker-compose.jellyfin.yml \
-								 -f compose/docker-compose.qbit.yml \
-								 -f compose/docker-compose.pihole.yml \
-								 -f compose/docker-compose.copyparty.yml \
-								 -f compose/docker-compose.radarr.yml \
-								 -f compose/docker-compose.prowlarr.yml \
-								 -f compose/docker-compose.openspeedtest.yml \
-								 -f compose/docker-compose.watchdog.yml up -d
-```
-
----
-
+# Start all services (multi-file compose)
+docker compose -f compose/docker-compose.homer.yml \
 ## 🩺 Health Monitoring
 
 - Each service has a Docker `healthcheck`.
@@ -81,6 +77,10 @@ $ docker compose -f compose/docker-compose.homer.yml \
 
 ## 📁 Directory Structure
 
+# Or just Kuma (standalone):
+docker compose up -d
+```
+
 ```text
 compose/         # All docker-compose YAMLs
 configs/         # Service configs (nginx, homer, etc.)
@@ -90,9 +90,13 @@ assets/          # Logos and static assets
 
 ---
 
-## ✨ Dashboard
 
-Access your dashboard at: [http://ohara.com](http://ohara.com)
+## ✨ Dashboards & Monitoring
+
+- Main dashboard: [http://ohara.com](http://ohara.com)
+- Uptime Kuma: [http://kuma.ohara.com](http://kuma.ohara.com)
+
+All services are reverse-proxied via Nginx for easy access on your LAN or via Tailscale.
 
 ---
 
