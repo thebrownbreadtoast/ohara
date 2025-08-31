@@ -42,18 +42,6 @@ links:
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-
-  # Monitoring & Dashboards
-  - name: "Monitoring & Dashboards"
-    logo: "https://github.com/NX211/homer-icons/blob/master/png/grafana.png?raw=true"
-    items:
-      - name: "Uptime Kuma"
-        logo: "https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg"
-        subtitle: "Uptime & status monitoring"
-        tag: "monitoring"
-        url: "http://kuma.ohara.com"
-        target: "_blank"
-
   # Entertainment
   - name: "Entertainment"
     logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/jellyfin.svg"
@@ -92,6 +80,17 @@ services:
         subtitle: "Authenticator"
         tag: "tools"
         url: "http://2fa.ohara.com"
+        target: "_blank"
+
+  # Monitoring & Dashboards
+  - name: "Monitoring & Dashboards"
+    logo: "https://github.com/NX211/homer-icons/blob/master/png/grafana.png?raw=true"
+    items:
+      - name: "Uptime Kuma"
+        logo: "https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg"
+        subtitle: "Uptime & status monitoring"
+        tag: "monitoring"
+        url: "http://kuma.ohara.com"
         target: "_blank"
 
   # Networking
