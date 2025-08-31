@@ -42,57 +42,71 @@ links:
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Self-hosted containers"
-    # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
-    logo: "https://github.com/NX211/homer-icons/blob/master/png/docker-moby.png?raw=true"
-    # class: "highlight-purple" # Optional css class to add on the service group. 
+
+  # Monitoring & Dashboards
+  - name: "Monitoring & Dashboards"
+    logo: "https://github.com/NX211/homer-icons/blob/master/png/grafana.png?raw=true"
+    items:
+      - name: "Uptime Kuma"
+        logo: "https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg"
+        subtitle: "Uptime & status monitoring"
+        tag: "monitoring"
+        url: "http://kuma.ohara.com"
+        target: "_blank"
+
+  # Entertainment
+  - name: "Entertainment"
+    logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/jellyfin.svg"
     items:
       - name: "Jellyfin"
-        # Alternatively a fa icon can be provided:
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/jellyfin.svg"
         subtitle: "Jellyfin & Chill!"
         tag: "entertainment"
         url: "http://jellyfin.ohara.com"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
       - name: "Radarr"
-        # Alternatively a fa icon can be provided:
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/png/radarr.png"
         subtitle: "Search movies here"
         tag: "entertainment"
         url: "http://radarr.ohara.com"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
+
+  # Tools
+  - name: "Tools"
+    logo: "https://github.com/NX211/homer-icons/blob/master/png/docker-moby.png?raw=true"
+    items:
       - name: "qBit"
-        # Alternatively a fa icon can be provided:
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
-        subtitle: "Illegal downloads happen here..."
+        subtitle: "Torrent client"
         tag: "tools"
         url: "http://qbit.ohara.com"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
       - name: "copyparty"
-        # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/filebrowser.png?raw=true"
         subtitle: "File Explorer"
         tag: "tools"
         url: "http://copyparty.ohara.com"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
       - name: "2FAuth"
-        # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/authelia.png?raw=true"
         subtitle: "Authenticator"
         tag: "tools"
         url: "http://2fa.ohara.com"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
+
+  # Networking
+  - name: "Networking"
+    logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
+    items:
       - name: "Pihole"
-        # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
         subtitle: "DNS manager"
-        tag: "tools"
+        tag: "networking"
         url: "http://pihole.ohara.com/admin"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
       - name: "OpenSpeedTest"
-        # Alternatively a fa icon can be provided:
         logo: "https://github.com/NX211/homer-icons/blob/master/png/openspeedtest.png?raw=true"
         subtitle: "Check your connection with Ohara server"
-        tag: "tools"
+        tag: "networking"
         url: "http://ost.ohara.com"
-        target: "_blank" # optional html tag target attribute
+        target: "_blank"
