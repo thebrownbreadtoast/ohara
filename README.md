@@ -12,7 +12,6 @@ Ohara is designed for seamless access both at home and remotely:
 <p align="center">
 	<img src="https://healthchecks.io/badge/b02318c7-d44f-4edf-b034-4b3afc/jMNtyHx2-2.svg"/>
 	<img src="https://img.shields.io/badge/docker-compose-blue?logo=docker&style=flat-square"/>
-	<img src="https://img.shields.io/badge/healthchecks.io-integrated-orange?style=flat-square"/>
 </p>
 
 ---
