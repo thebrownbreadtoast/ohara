@@ -85,7 +85,7 @@ services:
         target: "_blank"
 
   # Monitoring & Dashboards
-  - name: "Monitoring & Dashboards"
+  - name: "Monitoring"
     logo: "https://github.com/NX211/homer-icons/blob/master/png/grafana.png?raw=true"
     items:
       - name: "Uptime Kuma"
@@ -96,7 +96,7 @@ services:
         target: "_blank"
       - name: "OpenSpeedTest"
         logo: "https://github.com/NX211/homer-icons/blob/master/png/openspeedtest.png?raw=true"
-        subtitle: "Check your services running on Ohara server"
+        subtitle: "Check download & upload speed"
         tag: "networking"
         url: "http://ost.ohara.com"
         target: "_blank"
@@ -106,7 +106,7 @@ services:
     items:
       - name: "Pihole"
         logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
-        subtitle: "DNS manager"
+        subtitle: "Local DNS"
         tag: "networking"
         url: "http://pihole.ohara.com/admin"
         target: "_blank"
