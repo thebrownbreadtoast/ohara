@@ -50,63 +50,56 @@ links:
 # First level array represents a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  # Entertainment
-  - name: "Entertainment"
-    logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/jellyfin.svg"
+  # Media
+  - name: "Media"
+    logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/channels-dvr.png"
     items:
       - name: "Jellyfin"
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/jellyfin.svg"
         subtitle: "Jellyfin & Chill!"
-        tag: "entertainment"
         url: "http://jellyfin.ohara.com"
-        target: "_blank"
-      - name: "Radarr"
-        logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/png/radarr.png"
-        subtitle: "Search movies here"
-        tag: "entertainment"
-        url: "http://radarr.ohara.com"
         target: "_blank"
 
   # Tools
   - name: "Tools"
-    logo: "https://github.com/NX211/homer-icons/blob/master/png/docker-moby.png?raw=true"
+    logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/it-tools.png"
     items:
+      - name: "Radarr"
+        logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/png/radarr.png"
+        subtitle: "Search movies here"
+        url: "http://radarr.ohara.com"
+        target: "_blank"
       - name: "qBit"
         logo: "https://raw.githubusercontent.com/NX211/homer-icons/7f15a0ec749f4604b9f18e5bd4ee955002d8c896/svg/qbittorrent.svg"
         subtitle: "Torrent client"
-        tag: "tools"
         url: "http://qbit.ohara.com"
         target: "_blank"
       - name: "copyparty"
         logo: "https://github.com/NX211/homer-icons/blob/master/png/filebrowser.png?raw=true"
         subtitle: "File Explorer"
-        tag: "tools"
         url: "http://copyparty.ohara.com"
         target: "_blank"
 
-  # Monitoring & Dashboards
-  - name: "Monitoring"
-    logo: "https://github.com/NX211/homer-icons/blob/master/png/grafana.png?raw=true"
+  # Monitoring & Alerts
+  - name: "Monitoring & Alerts"
+    logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-alerts.png"
     items:
       - name: "Uptime Kuma"
         logo: "https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg"
         subtitle: "Uptime & status monitoring"
-        tag: "monitoring"
         url: "http://kuma.ohara.com"
         target: "_blank"
       - name: "OpenSpeedTest"
         logo: "https://github.com/NX211/homer-icons/blob/master/png/openspeedtest.png?raw=true"
         subtitle: "Check download & upload speed"
-        tag: "networking"
         url: "http://ost.ohara.com"
         target: "_blank"
   # Networking
   - name: "Networking"
-    logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
+    logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pi-alert.png"
     items:
       - name: "Pihole"
         logo: "https://github.com/NX211/homer-icons/blob/master/png/pi-hole.png?raw=true"
         subtitle: "Local DNS"
-        tag: "networking"
         url: "http://pihole.ohara.com/admin"
         target: "_blank"
