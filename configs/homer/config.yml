@@ -8,7 +8,7 @@
 
 title: "Dashboard"
 subtitle: "Ohara"
-logo: "assets/homer-logo.png"
+logo: "https://raw.githubusercontent.com/thebrownbreadtoast/ohara/refs/heads/master/assets/homer/homer-logo.png"
 # Alternatively a fa icon can be provided:
 # icon: "fas fa-skull-crossbones"
 
