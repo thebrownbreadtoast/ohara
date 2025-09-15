@@ -1,14 +1,3 @@
-## 🌐 Network & DNS Architecture
-
-Ohara is designed for seamless access both at home and remotely:
-
-- **Pi-hole** provides DNS for your local network and remote clients via Tailscale.
-- Your router points to Pi-hole as the default DNS, so all local devices resolve `ohara.com` and service subdomains to your homeserver.
-- **Tailscale** is configured to use Pi-hole for DNS, so when remote, `ohara.com` and all services resolve securely over the Tailscale network.
-- All services are reverse-proxied via Nginx for unified access, whether on your LAN or remotely.
-
----
-
 ## 🏡 What is Ohara?
 
 **Ohara** is a self-hosted, modular homeserver stack powered by Docker Compose. It brings together essential services for your home network, all managed with health monitoring and a beautiful dashboard.
@@ -22,6 +11,17 @@ Ohara is designed for seamless access both at home and remotely:
 - **Modern dashboard** with [Homer](https://github.com/bastienwirtz/homer)
 - **Media streaming** ([Jellyfin](https://jellyfin.org)), **downloads** ([qBittorrent](https://www.qbittorrent.org)), **ad-blocking** ([Pi-hole](https://pi-hole.net)), and more!
 - **Easy configuration** and extensibility
+
+---
+
+## 🌐 Network & DNS Architecture
+
+Ohara is designed for seamless access both at home and remotely:
+
+- **Pi-hole** provides DNS for your local network and remote clients via Tailscale.
+- Your router points to Pi-hole as the default DNS, so all local devices resolve `ohara.com` and service subdomains to your homeserver.
+- **Tailscale** is configured to use Pi-hole for DNS, so when remote, `ohara.com` and all services resolve securely over the Tailscale network.
+- All services are reverse-proxied via Nginx for unified access, whether on your LAN or remotely.
 
 ---
 
