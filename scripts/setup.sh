@@ -5,7 +5,9 @@ echo "Installing required packages..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 HOME_DIR="$HOME"
 
-bash "$SCRIPT_DIR/install-docker.sh"
+echo "Installing Docker..."
+curl -fsSL https://get.docker.com | sudo sh
+
 sudo apt-get install -y docker-compose samba git vim
 
 ln -sf "$SCRIPT_DIR/.bashrc" "$HOME_DIR/.bashrc"
