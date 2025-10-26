@@ -41,10 +41,10 @@ links:
   #   icon: "fas fa-heartbeat"
   #   url: "https://healthchecks.io/projects/6199303b-aca6-4c1d-aadc-c3cc95867adb/checks/"
   #   target: "_blank"
-  - name: "Uptime Kuma Status"
-    icon: "fas fa-tachometer-alt"
-    url: "http://kuma.ohara.com/status/ohara"
-    target: "_blank"
+  # - name: "Uptime Kuma Status"
+  #   icon: "fas fa-tachometer-alt"
+  #   url: "http://kuma.ohara.com/status/ohara"
+  #   target: "_blank"
 
 # Services
 # First level array represents a group.
@@ -84,11 +84,11 @@ services:
   - name: "Monitoring & Alerts"
     logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-alerts.png"
     items:
-      - name: "Uptime Kuma"
-        logo: "https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg"
-        subtitle: "Uptime & status monitoring"
-        url: "http://kuma.ohara.com"
-        target: "_blank"
+      # - name: "Uptime Kuma"
+      #   logo: "https://github.com/louislam/uptime-kuma/raw/master/public/icon.svg"
+      #   subtitle: "Uptime & status monitoring"
+      #   url: "http://kuma.ohara.com"
+      #   target: "_blank"
       - name: "OpenSpeedTest"
         logo: "https://github.com/NX211/homer-icons/blob/master/png/openspeedtest.png?raw=true"
         subtitle: "Check download & upload speed"
