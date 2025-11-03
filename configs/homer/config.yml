@@ -60,6 +60,16 @@ services:
         url: "http://jellyfin.ohara.com"
         target: "_blank"
 
+  # Games
+  - name: "Games"
+    logo: "https://github.com/NX211/homer-icons/blob/master/png/steam.png?raw=true"
+    items:
+      - name: "Chess"
+        logo: "https://chesskit.org/favicon-32x32.png"
+        subtitle: "Chess evaluation engine"
+        url: "http://chess.ohara.com"
+        target: "_blank"
+
   # Tools
   - name: "Tools"
     logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/it-tools.png"
@@ -94,6 +104,7 @@ services:
         subtitle: "Check download & upload speed"
         url: "http://ost.ohara.com"
         target: "_blank"
+
   # Networking
   - name: "Networking"
     logo: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/pi-alert.png"
