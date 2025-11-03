@@ -117,3 +117,12 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+
+server {
+    listen 80;
+    server_name chess.ohara.com;
+
+    location / {
+        proxy_pass http://192.168.0.111:3002;
+    }
+}
