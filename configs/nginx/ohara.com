@@ -4,7 +4,7 @@ server {
     server_name ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:8080;
+        proxy_pass http://192.168.1.111:8080;
     }
 }
 
@@ -14,7 +14,7 @@ server {
     server_name jellyfin.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:8096;
+        proxy_pass http://192.168.1.111:8096;
     }
 }
 
@@ -24,7 +24,7 @@ server {
     server_name qbit.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:8081;
+        proxy_pass http://192.168.1.111:8081;
 
         # Also enable "Enable reverse proxy support" in Setting>WebUI and use "nginx" as value Trusted proxies list
         proxy_set_header   Host               $proxy_host;
@@ -40,7 +40,7 @@ server {
     server_name pihole.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:8888;
+        proxy_pass http://192.168.1.111:8888;
     }
 }
 
@@ -50,7 +50,7 @@ server {
     server_name copyparty.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:3923;
+        proxy_pass http://192.168.1.111:3923;
 
         proxy_redirect off;
 
@@ -79,7 +79,7 @@ server {
     server_name ost.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:3000;
+        proxy_pass http://192.168.1.111:3000;
 
         client_max_body_size 0;
     }
@@ -91,7 +91,7 @@ server {
     server_name radarr.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:7878;
+        proxy_pass http://192.168.1.111:7878;
     }
 }
 
@@ -101,7 +101,7 @@ server {
     server_name prowlarr.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:9696;
+        proxy_pass http://192.168.1.111:9696;
     }
 }
 
@@ -110,7 +110,7 @@ server {
     server_name kuma.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:3001;
+        proxy_pass http://192.168.1.111:3001;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -123,6 +123,6 @@ server {
     server_name chess.ohara.com;
 
     location / {
-        proxy_pass http://192.168.0.111:3002;
+        proxy_pass http://192.168.1.111:3002;
     }
 }
